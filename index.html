@@ -15,12 +15,12 @@
     </div>
     <div class="row mx-3 g-4">
         <!-- Left Search Side ELement -->
-        <div class="col-12 col-md-4 seach-wrapper">
+        <div class="col-12 col-md-4 search-wrapper">
             <form class="city-form d-flex flex-column ">
                 <h2>Search for a city:</h2>
-                <input type="text" id="city" name="city"> 
-                <button type="submit" class="btn search-btn btn-primary my-2">Search</button>
-            </form>
+                <input type="text" id="city-input" name="city">
+                <input type="submit" value="Submit" id="city-submit" class="btn search-btn btn-primary my-2"> 
+             </form>
         </div>
 
         <!-- Main display right side -->
@@ -33,34 +33,34 @@
                 <span class="api-info uv-info">UV Index</span>
             </div>
             <div class="5-day-forcast container">
-                <h3 class="forcast-title">5-day-forcast</h3>
+                <h3 class="forcast-title h5">5-day-forcast</h3>
                 <div class="card-container row d-flex justify-content-around ">
                     <div class="card day-1 col-12 col-lg-2">
-                        <h4 class="card-header">Day 1</h4>
+                        <h4 class="card-header h5">Day 1</h4>
                         <span class="card-info temp-card"></span>
                         <span class="card-info wind-card"></span>
                         <span class="card-info humidity-card"></span>
                     </div>
                     <div class="card day-2 col-12 col-lg-2">
-                        <h4 class="card-header">Day 2</h4>
+                        <h4 class="card-header h5">Day 2</h4>
                         <span class="card-info temp-card"></span>
                         <span class="card-info wind-card"></span>
                         <span class="card-info humidity-card"></span>
                     </div>
                     <div class="card day-3 col-12 col-lg-2">
-                        <h4 class="card-header">Day 3</h4>
+                        <h4 class="card-header h5">Day 3</h4>
                         <span class="card-info temp-card"></span>
                         <span class="card-info wind-card"></span>
                         <span class="card-info humidity-card"></span>
                     </div>
                     <div class="card day-4 col-12 col-lg-2">
-                        <h4 class="card-header">Day 4</h4>
+                        <h4 class="card-header h5">Day 4</h4>
                         <span class="card-info temp-card"></span>
                         <span class="card-info wind-card"></span>
                         <span class="card-info humidity-card"></span>
                     </div>
                     <div class="card day-5 col-12 col-lg-2">
-                        <h4 class="card-header">Day 5</h4>
+                        <h4 class="card-header h5">Day 5</h4>
                         <span class="card-info temp-card"></span>
                         <span class="card-info wind-card"></span>
                         <span class="card-info humidity-card"></span>
@@ -69,6 +69,9 @@
             </div>
         </div>
     </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="./assets/js/script.js"></script>
+
    
 </body>
 </html>
