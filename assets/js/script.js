@@ -1,5 +1,5 @@
-const weatherApiKey = "66ee64cb799f0e3ccdedfc399d23c420";
-const geocodeApiKey = "MJc2C5bX8NzRAm1OhYpbU96XtAXV6GWd";
+const weatherApiKey = config.wApiKey;
+const geocodeApiKey = config.gApiKey;
 
 var buttonList = [];
 var weatherObj = {};
