@@ -49,7 +49,7 @@ var createCityButton = function(city, gApiKey=geocodeApiKey){
            return
         } else {
             let cityStateName = cityData.adminArea5+cityData.adminArea3;
-
+         
             if (!buttonList[cityStateName]){ // Check if the button is already created
                 let cityButtonEl = $("<button>").addClass("btn btn-secondary btn-city w-100 my-1 ")
                     .text(`${cityData.adminArea5}, ${cityData.adminArea3}`)
@@ -184,7 +184,9 @@ var loadWeather = function(){
 
     if(!weatherObj){ // if it doenst exist 
         weatherObj = {};
-        
+    }
+    if(!buttonList){
+        buttonList = {};
     }
 
     for(city in buttonList){
