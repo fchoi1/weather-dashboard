@@ -10,70 +10,72 @@
     <title>Weather Dashboard</title>
 </head>
 <body>
-    <div class="header-wrapper text-center">
-        <h1 class="header-title"> Weather Dashboard</h1>
-    </div>
-    <div class="row mx-3 g-4">
-        <!-- Left Search Side ELement -->
-        <div class="col-12 col-md-4 col-lg-2 search-wrapper">
-            <form class="city-form d-flex flex-column ">
-                <h2>Search for a city:</h2>
-                <input type="text" id="city-input" name="city">
-                <input type="submit" value="Submit" id="city-submit" class="btn search-btn btn-primary my-2"> 
-             </form>
+    <div class="main border border-dark rounded m-1 p-2">
+        <div class="header-wrapper text-center">
+            <h1 class="header-title title-gradient text-white"> Weather Dashboard</h1>
         </div>
-
-        <!-- Main display right side -->
-        <div class="col-12 col-md-8 col-lg-10 weather-display-wrapper d-flex flex-column">
-            <div class="api-content container border d-flex flex-column my-3">
-                <h2 class="city-title my-auto">Test City</h2>
-                <span class="api-info temp-info py-2">Temperature: </span>
-                <span class="api-info wind-info py-2">Wind: </span>
-                <span class="api-info humidity-info py-2">Humidity:</span>
-                <span class="api-info uv-info py-2">UV Index: <span class="api-info uv-info-value"></span> </span>
+        <div class="row mx-3 g-4">
+            <!-- Left Search Side ELement -->
+            <div class="col-12 col-md-4 col-lg-2 search-wrapper">
+                <form class="city-form d-flex flex-column ">
+                    <h2 class="search-title">Search for a city:</h2>
+                    <input type="text" id="city-input" name="city">
+                    <input type="submit" value="Submit" id="city-submit" class="btn search-btn btn-primary my-2"> 
+                </form>
             </div>
-            <div class="5-day-forcast container p-1">
-                <h3 class="forcast-title h5">5-day-forcast</h3>
-                <div class="card-container row d-flex justify-content-between w-100 m-0">
-                    <div class="card weather-card bg-dark text-white day-1 col-12 col-lg-2 py-1 my-1">
-                        <h4 class="card-header h5 p-0">Day 1</h4>
-                        <img class="card-weather-icon w-25"> 
-                        <span class="card-info temp-card-max"></span>
-                        <span class="card-info temp-card-min"></span>
-                        <span class="card-info wind-card"></span>
-                        <span class="card-info humidity-card"></span>
-                    </div>
-                    <div class="card weather-card bg-dark text-white day-2 col-12 col-lg-2 py-1 my-1">
-                        <h4 class="card-header h5 p-0">Day 2</h4>
-                        <img class="card-weather-icon w-25"> 
-                        <span class="card-info temp-card-max"></span>
-                        <span class="card-info temp-card-min"></span>
-                        <span class="card-info wind-card"></span>
-                        <span class="card-info humidity-card"></span>
-                    </div>
-                    <div class="card weather-card bg-dark text-white day-3 col-12 col-lg-2 py-1 my-1">
-                        <h4 class="card-header h5 p-0">Day 3</h4>
-                        <img class="card-weather-icon w-25"> 
-                        <span class="card-info temp-card-max"></span>
-                        <span class="card-info temp-card-min"></span>
-                        <span class="card-info wind-card"></span>
-                        <span class="card-info humidity-card"></span>
-                    </div>
-                    <div class="card weather-card bg-dark text-white day-4 col-12 col-lg-2 py-1 my-1">
-                        <h4 class="card-header h5 p-0">Day 4</h4>
-                        <img class="card-weather-icon w-25"> 
-                        <span class="card-info temp-card-max"></span>
-                        <span class="card-info temp-card-min"></span>
-                        <span class="card-info wind-card"></span>
-                        <span class="card-info humidity-card"></span>
-                    </div>
-                    <div class="card weather-card bg-dark text-white day-5 col-12 col-lg-2 py-1 my-1">
-                        <h4 class="card-header h5 p-0">Day 5</h4>
-                        <img class="card-weather-icon w-25"> 
-                        <span class="card-info temp-card-max"></span>
-                        <span class="card-info temp-card-min"></span>
-                        <span class="card-info wind-card"></span>
-                        <span class="card-info humidity-card"></span>
+
+            <!-- Main display right side -->
+            <div class="col-12 col-md-8 col-lg-10 weather-display-wrapper d-flex flex-column">
+                <div class="api-content container border d-flex flex-column my-3">
+                    <h2 class="city-title my-auto">Test City</h2>
+                    <span class="api-info temp-info py-2">Temperature: </span>
+                    <span class="api-info wind-info py-2">Wind: </span>
+                    <span class="api-info humidity-info py-2">Humidity:</span>
+                    <span class="api-info uv-info py-2">UV Index: <span class="api-info uv-info-value"></span> </span>
+                </div>
+                <div class="5-day-forcast container p-1">
+                    <h3 class="forcast-title h5">5-day-forcast</h3>
+                    <div class="card-container row d-flex justify-content-between w-100 m-0">
+                        <div class="card weather-card bg-dark text-white day-1 col-12 col-lg-2 py-1 my-1">
+                            <h4 class="card-header h5 p-0">Day 1</h4>
+                            <img class="card-weather-icon w-25"> 
+                            <span class="card-info temp-card-max"></span>
+                            <span class="card-info temp-card-min"></span>
+                            <span class="card-info wind-card"></span>
+                            <span class="card-info humidity-card"></span>
+                        </div>
+                        <div class="card weather-card bg-dark text-white day-2 col-12 col-lg-2 py-1 my-1">
+                            <h4 class="card-header h5 p-0">Day 2</h4>
+                            <img class="card-weather-icon w-25"> 
+                            <span class="card-info temp-card-max"></span>
+                            <span class="card-info temp-card-min"></span>
+                            <span class="card-info wind-card"></span>
+                            <span class="card-info humidity-card"></span>
+                        </div>
+                        <div class="card weather-card bg-dark text-white day-3 col-12 col-lg-2 py-1 my-1">
+                            <h4 class="card-header h5 p-0">Day 3</h4>
+                            <img class="card-weather-icon w-25"> 
+                            <span class="card-info temp-card-max"></span>
+                            <span class="card-info temp-card-min"></span>
+                            <span class="card-info wind-card"></span>
+                            <span class="card-info humidity-card"></span>
+                        </div>
+                        <div class="card weather-card bg-dark text-white day-4 col-12 col-lg-2 py-1 my-1">
+                            <h4 class="card-header h5 p-0">Day 4</h4>
+                            <img class="card-weather-icon w-25"> 
+                            <span class="card-info temp-card-max"></span>
+                            <span class="card-info temp-card-min"></span>
+                            <span class="card-info wind-card"></span>
+                            <span class="card-info humidity-card"></span>
+                        </div>
+                        <div class="card weather-card bg-dark text-white day-5 col-12 col-lg-2 py-1 my-1">
+                            <h4 class="card-header h5 p-0">Day 5</h4>
+                            <img class="card-weather-icon w-25"> 
+                            <span class="card-info temp-card-max"></span>
+                            <span class="card-info temp-card-min"></span>
+                            <span class="card-info wind-card"></span>
+                            <span class="card-info humidity-card"></span>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -85,6 +87,6 @@
     <script tpye='text/javascript' src="./assets/js/config.js"></script>
     <script src="./assets/js/script.js"></script>
 
-   
+    
 </body>
 </html>
