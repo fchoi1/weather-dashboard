@@ -7,7 +7,7 @@ var buttonList = {};
 var weatherObj = {};
 
 async function getCityData(city, apiKey=geocodeApiKey){
-    let apiUrl = `http://www.mapquestapi.com/geocoding/v1/address?location=${city}&key=${apiKey}`;
+    let apiUrl = `https://www.mapquestapi.com/geocoding/v1/address?location=${city}&key=${apiKey}`;
     // condensed wait of api fetch
     let response = await fetch(apiUrl);
 
