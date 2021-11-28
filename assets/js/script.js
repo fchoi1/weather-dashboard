@@ -71,9 +71,7 @@ var createCityButton = function(city, gApiKey=geocodeApiKey){
             }
         }
     })
-    // .catch(error => {
-    //     error.message;
-    // });    
+    
 }
 
 var generateWeatherData = function(cityState, wApiKey=weatherApiKey){
@@ -115,9 +113,6 @@ var generateWeatherData = function(cityState, wApiKey=weatherApiKey){
         createWeatherElements(cityState)
         saveWeather();
     });
-    // .catch(error => {
-    //     error.message;
-    // });
 }
 
 var createWeatherElements = function(cityStateName){
@@ -125,6 +120,7 @@ var createWeatherElements = function(cityStateName){
     // If the date saved is not the same as today recall api
     if (moment(weatherObj[cityStateName].date, momentFormat).isAfter(moment())){ 
         console.log("After");
+        generateWeatherData(cityStateName);
     }
 
     // Update elements and icons for main
