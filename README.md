@@ -11,7 +11,7 @@ Made using HTML, CSS, and Javascript with a focus on APIs, AJAX/Fetch,
 
 <img src="./assets/images/website_screenshot.PNG" width="500">
 
-## How to use the password generator
+## How to use the Weather Dashboard
 
 1. Search for a city and see the weather info on the right side
 
